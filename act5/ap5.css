@@ -1,0 +1,217 @@
+body { font-family: 'Mitr', sans-serif;
+        background: #ffffff;
+        margin: 0;
+        padding: 0;}
+
+        
+.lg { width: 200px; padding: 10px;}
+
+nav { font-family: 'Mitr', sans-serif;
+      display: flex;
+      height: auto;
+      background: #7b994e;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      flex-direction: column;
+    }
+
+.nav-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+  
+  ul {
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 0;
+      display: none;
+    }
+
+  ul li {font-family: 'Mitr', sans-serif;
+      list-style-type:none ;
+      font-size: 15px;
+      cursor: pointer;
+      margin: 20px;
+      text-align: center;
+      border-bottom-style:solid ;
+      border-bottom-color:#ccc ;
+      border-bottom-width:1px ;
+      padding: 5px 50px;
+    }
+
+    ul li a {font-family: 'Mitr', sans-serif;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
+    ul li:first-child {
+        margin-top: 0;
+    }
+
+    ul li:hover {
+        opacity: 0.5;
+    }
+
+    .active{
+        display: flex;
+    }
+
+    @media screen and (min-width: 800px){
+        nav{
+            height: 80px;
+            flex-direction: row;
+        }
+
+        .logo{
+            padding-left: 50px;
+            margin: 0;
+            width: 20%;
+        }
+
+        ul {display: flex;
+            justify-content: flex-end;
+            width: 80%;
+            flex-direction: row;
+          }
+
+          ul li {display: inline-block;
+            margin: 0 70px 0 0;
+            text-align: left;
+            border-bottom-style:none ;
+            padding: 0;
+          }
+
+          .nav-toggle {
+              display: none;
+          }
+        }
+
+
+* {box-sizing: border-box;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+.container{
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+   
+}
+
+h2 {
+  display: block;
+  font-size: 20px;
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+
+.w{width: 100%;
+  
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.269), rgba(255, 255, 255, 0.765)),url("0bg.jpg");
+height:  100%;}
+
+.ww{background-color: rgb(255, 255, 255);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+
+  
+.gg{font-family: 'Mitr', sans-serif;
+  background-color: rgb(248, 119, 129);
+ }
+
+ .gg:hover{font-family: 'Mitr', sans-serif;
+  background-color: rgb(255, 255, 255);
+  transition-duration: 0.3s;
+  cursor: pointer;
+ }
+  
+  .ng{font-family: 'Mitr', sans-serif; 
+    background-color: rgb(248, 119, 129);        
+   }
+
+   .ng:hover{font-family: 'Mitr', sans-serif;
+    background-color: rgb(255, 255, 255);
+    transition-duration: 0.3s;
+    cursor: pointer;
+   }
+
+
+.ttt{font-size: 40px;}
+
+
+
+h4 {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bolder;
+  font-size: 22px;
+  color:rgb(11, 119, 85);
+}
