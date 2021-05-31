@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write Review Page</title>
+    <link rel="stylesheet" href="writeReview.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+    <script src="initFirebase.js"></script>
+    
+</head>
+<body>
+
+    <nav>
+        <span class="nav-toggle" id="js-nav-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+
+        <div class="logo">
+            <img src="https://i1.bpic.cc/file/img-b1/2021/05/12/LogoMTKb691dd5dbf93ffe0.png" alt="LogoMTKb691dd5dbf93ffe0.png" 
+            class="lg" border="0">
+        </div>
+
+        <ul id="js-menu">
+            <li><a href="https://panittawee.github.io/ss/cv/ok.html">Home</a></li>
+            <li><a href="https://panittawee.github.io/ss/main/Mainpage.html#activities">Activities</a></li>
+            <li><a href="https://nbnnnanow.github.io/test-reviewPage/reviewPage.html#reviews">Reviews</a></li>
+        </ul>
+    </nav>
+    <div class="add-review">
+        <h1 class="review-topic">WRITE REVIEW</h1>
+        <div class="act-tourActtr-images">
+            <!-- Activity & touristAttraction Part -->
+            <div class="activity-touristAttraction">
+                <div class="activity">
+                    <h2 class="activity-topic">กิจกรรม</h2>
+                        <input type="text" name="actName" id="actname" placeholder="ex. ปลูกป่า"/>
+                </div>
+
+                <div class="touristAttraction">
+                    <h2 class="touristAttr-topic">สถานที่</h2>
+                        <input type="text" name="tourAttr" id="attrname" placeholder="ex. ผาเก็บตะวัน"/>
+                </div>
+            </div>
+
+            <!-- Upload image Part -->
+            <div class="upload-img">
+                <div class="show-img" id="image"></div>
+                <div id="yourBtn" onclick="getFile()"><img src="upload-pic.png" width="40px" height="46.8px" alt=""></div>
+                <input type="file" name="" id="photo" style="display:none" onchange="previewFiles()" multiple/>
+                <button onclick="uploadImage()" id="button-img">Upload Image!</button>
+            </div>
+        </div>
+
+        <!-- descriptionReview Part -->
+        <div class="descript">
+            <div class="des-top"><h2 class="descript-topic">รายละเอียด</h2></div>
+            <div class="box-des">
+                <textarea name="descriptReview" id="textreview" placeholder="เล่าให้เราฟังเกี่ยวกับประสบการณ์ท่องเที่ยวของคุณ..."></textarea>
+            </div>
+        </div>
+
+        <!-- Submit button Part -->
+        <div class="submit-button">
+            <button id="myButton" class="submit-b" onclick="addData()">Submit</button>
+        </div>
+    </div>
+    <script src="writeReview.js"></script>
+</body>
+
+</html>

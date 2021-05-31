@@ -1,0 +1,383 @@
+body { font-family: 'Mitr', sans-serif;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;}
+
+    
+.lg { width: 200px; padding: 10px;}
+
+nav { display: flex;
+  height: auto;
+  background: #7b994e;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.nav-toggle {
+position: absolute;
+top: 20px;
+left: 20px;
+font-size: 30px;
+display: inline-block;
+cursor: pointer;
+}
+
+ul {
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0;
+  display: none;
+}
+
+ul li {
+  list-style-type:none ;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 20px;
+  text-align: center;
+  border-bottom-style:solid ;
+  border-bottom-color:#ccc ;
+  border-bottom-width:1px ;
+  padding: 5px 50px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+ul li:first-child {
+    margin-top: 0;
+}
+
+ul li:hover {
+    opacity: 0.5;
+}
+
+.active{
+    display: flex;
+}
+
+.add-review {
+    padding: 40px;
+}
+
+@media screen and (min-width: 800px){
+    nav{
+        height: 80px;
+        flex-direction: row;
+    }
+
+    .logo{
+        padding-left: 50px;
+        margin: 0;
+        width: 20%;
+    }
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        width: 80%;
+        flex-direction: row;
+      }
+
+    ul li {
+        display: inline-block;
+        margin: 0 70px 0 0;
+        text-align: left;
+        border-bottom-style:none ;
+        padding: 0;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .review-topic {
+        text-align: center;
+        font-size: 42px;
+        margin: 0px;
+        padding: 20px 0px 40px 0px;
+    }
+
+    .activity-topic, .touristAttr-topic, .descript-topic {
+        margin: 0px;
+    }
+
+    #actname, #attrname {
+        font-family: 'Mitr', sans-serif;
+        width: 400px;
+        border: 4px solid #A4A7AB;
+        border-radius: 3px;
+        font-size: medium;
+    }
+
+    #textreview {
+        font-family: 'Mitr', sans-serif;
+        border: 2px solid #A4A7AB;
+        border-radius: 1px;
+        font-size: medium;
+        width: 690px;
+        height: 380px;
+    }
+
+    .upload-img {
+        width: 200px;
+        height: 300px;
+    }
+    
+    #button-img {
+        font-family: 'Mitr', sans-serif;
+        background-color: #f3f3f3;
+        color: black;
+        border: 1px dashed #A4A7AB;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        transition-duration: 0.4s;
+        cursor: pointer; 
+    }
+    
+    #button-img:hover {
+        background-color: #ddd;
+        
+    }
+    
+    #yourBtn {
+        position: relative;
+        font-family: 'Mitr', sans-serif;
+        font-size: medium;
+        width: 45px;
+        padding: 10px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border: 1px dashed #BBB;
+        text-align: center;
+        background-color: #f3f3f3;
+        cursor: pointer;
+    }
+    
+    #yourBtn:hover {
+        background-color: #ddd;
+    }
+    
+    .act-tourActtr-images {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0px 20px 0px;
+    }
+    
+    .activity-touristAttraction, .activity, .touristAttraction {
+        display: block;
+    }
+    
+    .upload-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .activity, .touristAttraction {
+        padding: 10px 0px 20px 0px;
+    }
+    
+    .descript {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .des-top {
+        width: 690px;
+    }
+
+    .submit-button {
+        display: block;
+        text-align: center;
+        padding: 20px 0px 10px 0px;
+    }
+
+    .submit-b {
+        display: inline-block;
+        font-family: 'Mitr', sans-serif;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #7b994e;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #A4A7AB;
+    }
+
+    .submit-b:hover {background-color: #5a7039}
+
+    .submit-b:active {
+        background-color: #5a7039;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+}
+
+@media screen and (max-width: 799.99px) {
+    .review-topic {
+        text-align: center;
+    
+        margin: 0px;
+        padding: 40px 0px 40px 0px;
+    }
+    
+    .activity-topic, .touristAttr-topic, .descript-topic {
+        margin: 0px;
+    }
+    
+    #actname, #attrname {
+        font-family: 'Mitr', sans-serif;
+        width: 250px;
+        border: 4px solid #A4A7AB;
+        border-radius: 3px;
+        font-size: medium;
+    }
+    
+    #act-name, #attr-name {
+        font-family: 'Mitr', sans-serif;
+        width: 250px;
+        border: 4px solid #A4A7AB;
+        border-radius: 3px;
+        font-size: medium;
+    }
+    
+    #textreview {
+        font-family: 'Mitr', sans-serif;
+        border: 2px solid #A4A7AB;
+        border-radius: 1px;
+        font-size: medium;
+        width: 250px;
+        height: 190px;
+        
+    }
+    
+    .upload-img {
+        width: 200px;
+        height: 300px;
+    }
+    
+    #button-img {
+        font-family: 'Mitr', sans-serif;
+        background-color: #f3f3f3;
+        color: black;
+        border: 1px dashed #A4A7AB;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        transition-duration: 0.4s;
+        cursor: pointer; 
+    }
+    
+    #button-img:hover {
+        background-color: #ddd;
+        
+    }
+    
+    #yourBtn {
+        position: relative;
+        font-family: 'Mitr', sans-serif;
+        font-size: medium;
+        width: 45px;
+        padding: 10px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border: 1px dashed #BBB;
+        text-align: center;
+        background-color: #f3f3f3;
+        cursor: pointer;
+    }
+    
+    #yourBtn:hover {
+        background-color: #ddd;
+    }
+    
+    .act-tourActtr-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0px 20px 0px;
+    }
+    
+    .activity-touristAttraction, .activity, .touristAttraction {
+        display: block;
+    }
+    
+    .upload-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .activity, .touristAttraction {
+        padding: 10px 0px 20px 0px;
+    }
+    
+    .descript {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .des-top {
+        width: 250px;
+    }
+
+    .submit-button {
+        display: block;
+        text-align: center;
+        padding: 20px 0px 10px 0px;
+    }
+
+    .submit-b {
+        display: inline-block;
+        font-family: 'Mitr', sans-serif;
+        padding: 8px 18px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #7b994e;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 7px #A4A7AB;
+    }
+
+    .submit-b:hover {background-color: #5a7039}
+
+    .submit-b:active {
+        background-color: #5a7039;
+        box-shadow: 0 3px #666;
+        transform: translateY(3px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #textreview {
+        font-family: 'Mitr', sans-serif;
+        border: 2px solid #A4A7AB;
+        border-radius: 1px;
+        font-size: medium;
+        width: 900px;
+        height: 380px;
+        
+    }
+
+    .des-top {
+        width: 900px;
+    }
+}
