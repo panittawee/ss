@@ -3,23 +3,7 @@ body { font-family: 'Mitr', sans-serif;
     background: #ffffff;
     margin: 0;
     padding: 0;}
-/* .section-title {
-      font-size: 32px;
-      font-weight: 600;
-      margin-bottom: 24px;
-    }
-.container {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0px auto;
-      padding: 24px;
-    }
-@media screen and (max-width: 512px){
-      .container {
-        padding: 0 12px;
-      }
-    } */
-/* --menu bar -- */
+
 .lg { width: 200px; padding: 10px;}
 
 nav { display: flex;
@@ -29,6 +13,13 @@ nav { display: flex;
   align-items: center;
   position: relative;
   flex-direction: column;
+}
+
+.nav-link {
+  display: block;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 .nav-toggle {
