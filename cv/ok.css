@@ -18,14 +18,40 @@ left: 20px;}
     background-size: cover;
     background-attachment: fixed;
     color: white; 
-    text-align: center;
     } 
+.Textcontent {
+    display: flex;
+    height: 88%;
+    text-align: center;
+}
+.texth {
+    flex-basis: 69%;
+    margin-top: 20%;
+}
+.h1 {
+    color: #fff;
+    font-size: 150px;
+}
+.p {
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+}
+.button {
+    Width: 180px;
+    Color: #000;
+    Font-size: 12px;
+    Padding: 12px 0;
+    Background: #fff;
+    Border: 0;
+    Border-radius: 40px;
+    outline: none;
+    Margin-top: 30px;
+}
 
-     h1 {
-        display: block;
-        font-size: 2em;
-        font-weight: bold;
-       
-    }
+
+
+     
+
     
   
