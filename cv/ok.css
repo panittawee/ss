@@ -10,7 +10,7 @@ html,body{height: 100%;}
 position: absolute;
 left: 20px;}
 
-.container{
+.container{width: 100%;
     height: 100%;
     background: linear-gradient(to right, rgba(204, 201, 201, 0.717), rgba(116, 116, 116, 0.765)),url(cover-small.jpg);
     background-repeat: no-repeat;
@@ -18,40 +18,83 @@ left: 20px;}
     background-size: cover;
     background-attachment: fixed;
     color: white; 
-    } 
-.Textcontent {
-    display: flex;
-    height: 88%;
     text-align: center;
-}
-.texth {
-    flex-basis: 69%;
-    margin-top: 20%;
-}
-.h1 {
-    color: #fff;
-    font-size: 150px;
-}
-.p {
-    color: #fff;
-    font-size: 11px;
-    line-height: 15px;
-}
-.button {
-    Width: 180px;
-    Color: #000;
-    Font-size: 12px;
-    Padding: 12px 0;
-    Background: #fff;
-    Border: 0;
-    Border-radius: 40px;
-    outline: none;
-    Margin-top: 30px;
-}
+    } 
 
 
+    .te {
+        display: flex;
+        height: 88%;
+        text-align: center;
+        margin-left: 5%;
+    }
+    .texth {
+        width: 100%;
+        flex-basis: 69%;
+        margin-top: 20%;
+        
+    }
 
-     
+     h1 { width: 100%;
+        display: block;
+        font-size: 70px;
+        font-weight: bold;
+        text-align: left;
+    }
 
+    p {
+        color: #fff;
+        font-size: 15px;
+        line-height: 20px;
+        margin: 10px;
+        text-align: left;
+        display: block;
+    }
     
-  
+    .click {
+        display: inline-block;
+        font-family: 'Mitr', sans-serif;
+        padding: 10px 10px;
+        font-size: 14px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        Border-radius: 40px;
+        border: 0;
+        position: absolute;
+        left: 60px;
+    }
+
+    @media screen and (max-width: 515px){
+
+        h1 { width: 100%;
+            display: block;
+            font-size: 50px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        p {
+            color: #fff;
+            font-size: 8px;
+            line-height: 20px;
+            margin: 10px;
+            text-align: left;
+            display: block;
+        }
+
+
+
+    }
+
+    @media screen and (max-width: 769px){
+
+        h1 { width: 100%;
+            display: block;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: left;
+        }
+    }
